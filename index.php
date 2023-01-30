@@ -23,6 +23,17 @@
                         </div>
                     </div>
                 </div>
+                <div id="timerWarpper">
+                    <div id="timerContainer">
+                        <div id="timer">
+                            <form action="" method="post" id="formMinuterie">
+                                <label for="timer">Timer</label>
+                                <input type="time" name="timer" id="timer" min="0" max="60" step="1" value="0" class="border-2">
+                                <button type="submit">Start</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
     </main>

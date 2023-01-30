@@ -5,9 +5,6 @@ function afficheHeure() {
     let heure = date.getHours();
     let minute = date.getMinutes();
     let seconde = date.getSeconds();
-    let jour = date.getDay();
-    let mois = date.getMonth();
-    let annee = date.getFullYear();
 
     let horloge = heure + ":" + minute + ":" + seconde;
 
@@ -17,3 +14,14 @@ function afficheHeure() {
 
 }
 afficheHeure();
+
+
+// Creation de la fonction pour la minuterie avec un bouton pour lancer et arreter la minuterie
+const formTmer = document.querySelector('#formMinuterie');
+formTmer.addEventListener('submit', (e) => {
+    e.preventDefault();
+    fetch('index.php')
+        .then(response => {
+            console.log(response);
+        })
+}
