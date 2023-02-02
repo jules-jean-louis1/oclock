@@ -11,26 +11,42 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script/main.js"></script>
+    <link rel="stylesheet" href="style/style.css">
     <title>Horloge</title>
 </head>
 <body>
+<!-- Header -->
+<?php
+    include 'import/header.php';
+?>
+<!-- Main -->
     <main>
-        <article>
-            <section>
+        <article class="mx-28">
+            <section class="flex flex-col items-center">
                 <div>
                     <div id="containerHorloge">
-                        <div id="horloge">
+                        <div id="horloge" class="text-[4em]">
                         </div>
                     </div>
                 </div>
-                <div id="timerWarpper">
-                    <div id="timerContainer">
-                        <div id="timer">
-                            <form action="" method="post" id="formMinuterie">
-                                <label for="timer">Timer</label>
-                                <input type="time" name="timer" id="timer" min="0" max="60" step="1" value="0" class="border-2">
-                                <button type="submit">Start</button>
-                            </form>
+                <div id="timerWarpper" class="flex justify-center items-center">
+                    <div class="wrapper flex flex-col items-center space-y-5" id="wrapper">
+                        <div class="display flex flex-row">
+                            <p class="timerDisplay" id="timerHrs">00</p> :
+                            <p class="timerDisplay" id="timerMins">00</p> :
+                            <p class="timerDisplay" id="timerSec">00</p> :
+                            <p class="timerDisplay" id="timerMilisec">00</p>
+                        </div>
+
+                        <div class="buttons">
+                            <button type="button" id="startBtn">Start</button>
+                            <button type="button" id="resetBtn">Reset</button>
+                            <button type="button" id="lapBtn">Lap</button>
+                        </div>
+                        <h1>Laps:</h1>
+
+                        <div id="laps">
+                            <p id="lapRecord"></p>
                         </div>
                     </div>
                 </div>
