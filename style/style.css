@@ -9,15 +9,28 @@
 body {
     font-family: 'Quicksand', sans-serif;
     /*background-color: #121316;*/
-    color: white;
-    background-color: #4B4B4B;
+    color: #222222;
+    background-color: #FFFFFF;
 }
 /*********************************************
 **********************************************
-**********    Header Section    **************
+**********     H E A D E R    **************
 **********************************************
 *********************************************/
 
+
+
+/*********************************************
+**********************************************
+**********      Section    **************
+**********************************************
+*********************************************/
+
+#timerWarpper {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+}
 
 #startBtn, #resetBtn, #lapBtn {
     background-color: transparent;
@@ -27,6 +40,80 @@ body {
     cursor: pointer;
 }
 #startBtn {
-    border-style: solid;
-    box-shadow: 0 0 5px 0 #00FF00;
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #63E6BE;
+    font-weight: bold;
+}
+#startBtn:hover {
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #0CA678;
+}
+#startBtn:active {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #FF8787;
+    font-weight: bold;
+}
+#startBtn:active:hover {
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #E03131;
+}
+#resetBtn {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #E599F7;
+    font-weight: bold;
+}
+#resetBtn:hover {
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #9C36B5;
+}
+#lapBtn {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #74C0FC;
+    font-weight: bold;
+}
+#lapBtn:hover {
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: #146EBE;
+}
+/*********************************************
+**********************************************
+********        F O O T E R         **********
+**********************************************
+*********************************************/
+footer{
+    color: #FFFFFF;
+}
+#logoFooter {
+    color: #74C0FC;
+}
+#linkButtonFooter {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+/*********************************************
+**********************************************
+********    R E S P O N S I V E    ***********
+**********************************************
+*********************************************/
+
+@media (min-width: 768px) {
+    #headerNav ul {
+        display: flex;
+    }
+
+    #headerNav button {
+        display: none;
+    }
 }
