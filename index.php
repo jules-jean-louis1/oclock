@@ -13,6 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="script/main.js"></script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/clock-regular.svg" type="image/x-icon">
     <title>Horloge</title>
 </head>
 <body>
