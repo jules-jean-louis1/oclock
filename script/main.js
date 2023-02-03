@@ -122,3 +122,80 @@ function lap() {
 lapBtn.addEventListener('click', lap);
 startBtn.addEventListener('click', startStop);
 resetBtn.addEventListener('click', reset);
+
+
+// Création de la fonction pour le chronomètre avec un bouton pour lancer et arreter le chronomètre
+var hoursSelect = document.getElementById("hours");
+var minutesSelect = document.getElementById("minutes");
+var secondsSelect = document.getElementById("seconds");
+var startButton = document.getElementById("startButton");
+var stopButton = document.getElementById("stopButton");
+var resetButton = document.getElementById("resetButton");
+var restartButton = document.getElementById("restartButton");
+var timeDisplay = document.getElementById("time");
+var targetTime;
+var timerInterval;
+var totalSeconds;
+
+startButton.addEventListener("click", startTimer);
+stopButton.addEventListener("click", stopTimer);
+resetButton.addEventListener("click", resetTimer);
+restartButton.addEventListener("click", restartTimer);
+
+function startTimer() {
+    totalSeconds =
+        parseInt(hoursSelect.value) * 60 * 60 +
+        parseInt(minutesSelect.value) * 60 +
+        parseInt(secondsSelect.value);
+    targetTime = new Date().getTime() + totalSeconds * 1000;
+    timerInterval = setInterval(updateTimer, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+}
+
+function resetTimer() {
+    clearInterval(timerInterval);
+    timeDisplay.textContent = "00:00:00";
+    hoursSelect.value = "0";
+    minutesSelect.value = "0";
+    secondsSelect.value = "0";
+}
+
+function restartTimer() {
+    clearInterval(timerInterval);
+    targetTime = new Date().getTime() + totalSeconds * 1000;
+    timerInterval = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+    var currentTime = new Date().getTime();
+    var timeLeft = targetTime - currentTime;
+
+    if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        timeDisplay.textContent = "Time's up!";
+        return;
+    }
+
+    var seconds = Math.floor(timeLeft /1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+
+    minutes %= 60;
+    seconds %= 60;
+
+    hours = padWithZero(hours);
+    minutes = padWithZero(minutes);
+    seconds = padWithZero(seconds);
+
+    timeDisplay.textContent = hours + ":" + minutes + ":" + seconds;
+}
+
+function padWithZero(time) {
+    if (time < 10) {
+        return "0" + time;
+    }
+    return time;
+}

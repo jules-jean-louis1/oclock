@@ -22,14 +22,14 @@ body {
 
 /*********************************************
 **********************************************
-**********      Section    **************
+**********     Section TIMER    **************
 **********************************************
 *********************************************/
 
 #timerWarpper {
     border: 0.125em solid #222222;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
+    background-color: #F0F1F3;
 }
 
 #startBtn, #resetBtn, #lapBtn {
@@ -82,6 +82,53 @@ body {
 #lapBtn:hover {
     box-shadow: 0 0.375em 0 #222222;
     background-color: #146EBE;
+}
+/*********************************************
+**********************************************
+**********   C O U N T D O W N  **************
+**********************************************
+*********************************************/
+
+#countdownWarpper {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    background-color: #F0F1F3;
+}
+#time {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+}
+#hours, #minutes, #seconds {
+    border-radius: 0.5em;
+    background-color: #FFFFFF;
+    border: 0.125em solid #c9d1d9;
+}
+#startButton, #resetButton, #stopButton {
+    border: 0.125em solid #222222;
+    border-radius: 0.5em;
+    box-shadow: 0 0.375em 0 #222222;
+    font-weight: bold;
+    padding: 10px;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+#startButton {
+    background-color: #63E6BE;
+}
+#startButton:hover {
+    background-color: #0CA678;
+}
+#resetButton {
+    background-color: #E599F7;
+}
+#resetButton:hover {
+    background-color: #9C36B5;
+}
+#stopButton {
+    background-color: #FF8787;
+}
+#stopButton:hover {
+    background-color: #E03131;
 }
 /*********************************************
 **********************************************
