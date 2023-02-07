@@ -1,6 +1,6 @@
 <header>
-    <div id="headerContainer">
-        <div id="headerContent" class="flex justify-between px-4 py-3 border-b-[1px] border-[#183153] bg-[#F0F1F3]">
+    <div id="headerContainer" class="flex justify-center">
+        <div id="headerContent" class="w-[85%] flex justify-between px-4 py-3 border-b-[1px] border-[#6633EEFF] bg-[#000212] rounded-lg">
             <div id="headerLogo">
                 <a href="index.php" class="font-bold ">
                     <i class="fa-regular fa-clock"></i>

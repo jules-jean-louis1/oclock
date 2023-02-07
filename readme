@@ -1,8 +1,5 @@
 Creation d'un site d'horloge en ligne
 
-Idee couleur
-#dcc0c2
-#222222
-#f4d5d8
+Site realiser en php, html, css, javascript et tailwindcss.
+Ce site est compose d'une horloge a l'heure de Paris, d'un chronometre, d'un minuteur et d'un compteur.
 
-#c5f4c4

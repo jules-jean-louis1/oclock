@@ -9,8 +9,14 @@
 body {
     font-family: 'Quicksand', sans-serif;
     /*background-color: #121316;*/
-    color: #222222;
-    background-color: #FFFFFF;
+    /*color: #222222;*/
+    /*background-color: #FFFFFF;*/
+    background-color: #000212;
+    color: #CFCFD0;
+}
+section {
+    border-radius: 0.5em;
+    background: radial-gradient(140% 107.13% at 50% 10%,transparent 37.41%,#63e 69.27%,#fff 100%);
 }
 /*********************************************
 **********************************************
@@ -27,9 +33,7 @@ body {
 *********************************************/
 
 #timerWarpper {
-    border: 0.125em solid #222222;
     border-radius: 0.5em;
-    background-color: #F0F1F3;
 }
 
 #startBtn, #resetBtn, #lapBtn {
@@ -40,47 +44,37 @@ body {
     cursor: pointer;
 }
 #startBtn {
-    border: 0.125em solid #222222;
+    border: 0.125em solid #0CA678;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
+    box-shadow: 0 0.375em 0 #0CA678;
     background-color: #63E6BE;
     font-weight: bold;
 }
 #startBtn:hover {
-    box-shadow: 0 0.375em 0 #222222;
+    transition: all 0.2s ease-in-out;
     background-color: #0CA678;
 }
-#startBtn:active {
-    border: 0.125em solid #222222;
-    border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
-    background-color: #FF8787;
-    font-weight: bold;
-}
-#startBtn:active:hover {
-    box-shadow: 0 0.375em 0 #222222;
-    background-color: #E03131;
-}
+
 #resetBtn {
-    border: 0.125em solid #222222;
+    border: 0.125em solid #9C36B5;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
+    box-shadow: 0 0.375em 0 #9C36B5;
     background-color: #E599F7;
     font-weight: bold;
 }
 #resetBtn:hover {
-    box-shadow: 0 0.375em 0 #222222;
+    transition: all 0.2s ease-in-out;
     background-color: #9C36B5;
 }
 #lapBtn {
-    border: 0.125em solid #222222;
+    border: 0.125em solid #146EBE;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
+    box-shadow: 0 0.375em 0 #146EBE;
     background-color: #74C0FC;
     font-weight: bold;
 }
 #lapBtn:hover {
-    box-shadow: 0 0.375em 0 #222222;
+    transition: all 0.2s ease-in-out;
     background-color: #146EBE;
 }
 /*********************************************
@@ -89,24 +83,16 @@ body {
 **********************************************
 *********************************************/
 
-#countdownWarpper {
-    border: 0.125em solid #222222;
-    border-radius: 0.5em;
-    background-color: #F0F1F3;
-}
 #time {
     border: 0.125em solid #222222;
     border-radius: 0.5em;
 }
 #hours, #minutes, #seconds {
     border-radius: 0.5em;
-    background-color: #FFFFFF;
     border: 0.125em solid #c9d1d9;
 }
 #startButton, #resetButton, #stopButton {
-    border: 0.125em solid #222222;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
     font-weight: bold;
     padding: 10px;
     margin: 5px 2px;
@@ -114,21 +100,30 @@ body {
 }
 #startButton {
     background-color: #63E6BE;
+    box-shadow: 0 0.375em 0 #0CA678;
+    border: 0.125em solid #0CA678;
 }
 #startButton:hover {
     background-color: #0CA678;
+    transition: all 0.2s ease-in-out;
 }
 #resetButton {
     background-color: #E599F7;
+    box-shadow: 0 0.375em 0 #9C36B5;
+    border: 0.125em solid #9C36B5;
 }
 #resetButton:hover {
     background-color: #9C36B5;
+    transition: all 0.2s ease-in-out;
 }
 #stopButton {
     background-color: #FF8787;
+    box-shadow: 0 0.375em 0 #E03131;
+    border: 0.125em solid #E03131;
 }
 #stopButton:hover {
     background-color: #E03131;
+    transition: all 0.2s ease-in-out;
 }
 /*********************************************
 **********************************************
@@ -144,7 +139,6 @@ footer{
 #linkButtonFooter {
     border: 0.125em solid #222222;
     border-radius: 0.5em;
-    box-shadow: 0 0.375em 0 #222222;
     background-color: transparent;
     font-weight: bold;
 }
