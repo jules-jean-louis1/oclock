@@ -22,8 +22,8 @@
     include 'import/header.php';
 ?>
 <!-- Main -->
-    <main>
-        <article class="h-[80vh] lg:h-[84vh]">
+    <main class="h-[87vh]">
+        <article class="h-[80%] lg:h-[84vh]">
             <section class="h-[100%] lg:py-6 lg:mx-6 flex flex-col items-center justify-between">
                 <div>
                     <div id="containerHorloge">

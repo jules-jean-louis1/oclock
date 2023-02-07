@@ -11,9 +11,6 @@
                 <nav class="hidden lg:block">
                     <ul class="flex font-bold">
                         <li class="mx-2">
-                            <a href="index.php">Horloge</a>
-                        </li>
-                        <li class="mx-2">
                             <a href="timer.php">Timer</a>
                         </li>
                         <li class="mx-2">
