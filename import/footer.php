@@ -1,5 +1,5 @@
 <footer>
-    <div id="containerFooter" class="fixed bottom-0 bg-[#000212] border-t border-[#CFCFD0] w-full">
+    <div id="containerFooter" class="fixed bottom-0 bg-[#000212] border-t border-[#797979] w-full">
         <div id="linkFooter">
             <ul class="flex justify-center py-2 space-x-[5px]">
                 <li class="flex p-2 bg-[#191A1ED3] hover:bg-[#191A1EEC]" id="linkButtonFooter">
